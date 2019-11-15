@@ -4,13 +4,44 @@ import styles from './navigation.module.css'
 
 export default () => (
   <nav role="navigation">
-    <ul className={styles.navigation}>
+    <div className={[styles.headerComponents,styles.flex].join(' ')}>
+      <a href="https://www.chick-fil-a.com" className={styles.logo }>
+        <span>Chick-Fil-A</span>
+      </a>
+      <ul className={styles.navList}>
+        <li><a>Menu</a></li>
+        <li><a>Stories</a></li>
+        <li><a>About</a></li>
+      </ul>
+
+      <div className={styles.rightNavList}>
+        <a style={{marginRight: '5px'}} >Chick-fil-A One </a>
+        <span>(</span><a className={styles.signIn}> Sign In </a><span>)</span>
+        <div style={{padding: "0 20px"}}>
+          <a className={styles.orderButton}>Order Food</a>
+        </div>
+      </div>
+    </div>
+    <div className={styles.subNav}>
+      <ul>
+        <li><a>Food</a></li>
+        <li><a>Lifestyle</a></li>
+        <li><a>Inside Chick-fil-A</a></li>
+        <li><a>News</a></li>
+      </ul>
+    </div>
+    
+    
+  </nav>
+)
+
+
+
+{/* <ul className={styles.navigation}>
       <li className={styles.navigationItem}>
         <Link to="/">Home</Link>
       </li>
       <li className={styles.navigationItem}>
         <Link to="/blog/">Blog</Link>
       </li>
-    </ul>
-  </nav>
-)
+    </ul> */}
