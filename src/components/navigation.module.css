@@ -18,3 +18,18 @@
 .navigationItem a {
   color: currentColor;
 }
+
+.logo {
+    content: '';
+    background-image: url(img/icon_circle-cfa-logo.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    width: 50px;
+    transition: transform 0.3s ease;
+}

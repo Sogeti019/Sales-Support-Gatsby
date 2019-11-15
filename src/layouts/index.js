@@ -3,6 +3,9 @@ import Link from 'gatsby-link'
 import base from './base.css'
 import Container from '../components/container'
 import Navigation from '../components/navigation'
+import CssBaseline from '@material-ui/core/CssBaseline';
+import { ThemeProvider } from '@material-ui/core/styles';
+import theme from '../theme';
 
 class Template extends React.Component {
   render() {
@@ -15,10 +18,13 @@ class Template extends React.Component {
     }
 
     return (
-      <Container>
-        <Navigation />
-        {children()}
-      </Container>
+      <ThemeProvider theme={theme}>
+        <CssBaseline />
+        <Container>
+          <Navigation />
+          {children()}
+        </Container>
+      </ThemeProvider>
     )
   }
 }
