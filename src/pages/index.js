@@ -2,6 +2,7 @@ import React from 'react'
 import get from 'lodash/get'
 import Helmet from 'react-helmet'
 import Hero from '../components/hero'
+import styles from './blog.module.css'
 import ArticlePreview from '../components/article-preview'
 
 class RootIndex extends React.Component {
@@ -15,11 +16,33 @@ class RootIndex extends React.Component {
         <Helmet title={siteTitle} />
         <Hero data={author.node} />
         <div className="wrapper">
-          <h2 className="section-headline">Recent articles</h2>
-          <ul className="article-list">
-            {posts.map(({ node }) => {
+          <ul style={{marginTop: '20px'}} className="article-list">
+            {posts.slice(0,3).map(({ node }) => {
               return (
-                <li key={node.slug}>
+                <li style={{flexBasis: '29%'}} className={styles.story} key={node.slug}>
+                  <ArticlePreview article={node} />
+                </li>
+              )
+            })}
+          </ul>
+        </div>
+        <div className="wrapper">
+          <ul className="article-list">
+            {posts.slice(0,2).map(({ node }) => {
+              return (
+                <li className={[styles.story,styles.related].join(' ')} key={node.slug}>
+                  <ArticlePreview article={node} />
+                </li>
+              )
+            })}
+          </ul>
+        </div>
+        <Hero data={author.node} />
+        <div className="wrapper">
+          <ul className="article-list" style={{flexWrap: 'wrap'}}>
+            {[...posts, ...posts].slice(0,6).map(({ node }) => {
+              return (
+                <li style={{flexBasis: '29%'}} className={styles.story} key={node.slug}>
                   <ArticlePreview article={node} />
                 </li>
               )
@@ -27,6 +50,8 @@ class RootIndex extends React.Component {
           </ul>
         </div>
       </div>
+      
+      
     )
   }
 }

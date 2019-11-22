@@ -2,9 +2,48 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 61.8vh;
-  max-height: 400px;
+  height: 100vh;
+  max-height: 600px;
   background: #e1e1e1;
   font-size: 2em;
   overflow: hidden;
+}
+
+
+.story {
+  -moz-flex-grow: 1;
+    flex-grow: 1;
+    -ms-flex-positive: 1;
+    font-size: 16px;
+    font-size: 1.6rem;
+    border: 2px solid #ededed;
+    border-right-color: transparent;
+    letter-spacing: 0px;
+    line-height: 28px;
+    padding: 30px 30px 110px;
+    position: relative;
+    text-align: left;
+    transition: border .5s ease;
+    width: 100%;
+}
+
+.story:hover {
+  border-color: #dd0031;
+}
+
+
+.story  p {
+  overflow: hidden;
+  line-height: 1.5;
+  max-height: 100px;
+  font-size: 16px;
+  margin: 0 0 20px 0;
+}
+
+.related {
+
+}
+
+.related h3 > a {
+  font-size: 36px;
 }

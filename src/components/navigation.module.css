@@ -191,21 +191,99 @@ a {
 
 .subNav {
   background-color: white;
-    left: 0;
-    padding: 18px 0;
-    position: absolute;
-    text-align: center;
-    top: 64px;
-    width: 100%;
-    z-index: 100;
+  left: 0;
+  padding: 18px 0;
+  text-align: center;
+  top: 64px;
+  width: 100%;
+  z-index: 100;
 }
 
 .subNav > ul > li {
   cursor: pointer;
-    -webkit-text-decoration-color: #dd0031;
-    text-decoration-color: #dd0031;
-    text-decoration: none;
-    margin: 0 1.5%;
-    padding: 0;
-    display: inline-block;
+  -webkit-text-decoration-color: #dd0031;
+  text-decoration-color: #dd0031;
+  text-decoration: none;
+  margin: 0 1.5%;
+  padding: 0;
+  display: inline-block;
+}
+
+
+.storiesFeature {
+  border-top: 1px solid #f4f8f9;
+  margin: 0;
+  padding: 20px 0;
+  width: 100%;
+  background-color: white;
+  background-color: white;
+
+}
+
+.storiesFeature .flex > div:first-child {
+  border-right: 1px solid #ccc;
+  padding-right: 30px;
+  text-align: center;
+  width: 22.95%;
+}
+
+.storiesFeature .flex > div {
+  font-size: 16px;
+  font-family: "apercu",sans-serif;
+  line-height: 28px;
+  margin-left: 2.725%;
+  text-align: left;
+  width: 22.95%;
+}
+
+.storiesFeature .flex > div:first-child a {
+  font-size: 16px;
+  color: #dd0031;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.storiesFeature .flex .food .tag {
+  font-size: 16px;
+  color: #dd0031;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+
+.wrapper {
+  margin: 0 auto;
+  max-width: 1380px;
+  padding: 0 30px;
+  width: auto;
+}
+
+.flex {
+  display: flex;
+}
+
+.cs {
+  background: url(https://thechickenwire.chick-fil-a.com/Assets/cfacom/css/img/cs-logo.png) transparent top left no-repeat;
+  background-size: 150px 150px;
+  display: inline-block;
+  height: 150px;
+  overflow: hidden;
+  text-indent: 120%;
+  white-space: nowrap;
+  width: 150px;
+  background-size: cover;
+  margin-right: 4.0875%;
+  min-width: 139px;
+}
+
+.food {
+
+}
+
+.tag {
+
+}
+
+.storyImg {
+  
 }

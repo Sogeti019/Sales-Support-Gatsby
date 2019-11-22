@@ -2,8 +2,13 @@ import React from 'react'
 import Link from 'gatsby-link'
 import styles from './navigation.module.css'
 
-export default () => (
-  <nav role="navigation">
+
+
+
+
+export default () => {
+  return (
+    <nav role="navigation">
     <div className={[styles.headerComponents,styles.flex].join(' ')}>
       <a href="https://www.chick-fil-a.com" className={styles.logo }>
         <span>Chick-Fil-A</span>
@@ -29,19 +34,9 @@ export default () => (
         <li><a>Inside Chick-fil-A</a></li>
         <li><a>News</a></li>
       </ul>
-    </div>
-    
-    
+    </div>  
   </nav>
-)
+  );
+}
 
 
-
-{/* <ul className={styles.navigation}>
-      <li className={styles.navigationItem}>
-        <Link to="/">Home</Link>
-      </li>
-      <li className={styles.navigationItem}>
-        <Link to="/blog/">Blog</Link>
-      </li>
-    </ul> */}
