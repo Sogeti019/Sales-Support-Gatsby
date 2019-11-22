@@ -10,8 +10,8 @@
     Ensure golden ratio for the hero size while limiting it to some extend to
     the viewport width
   */
-  height: 61.8vh;
-  max-height: 400px;
+  height: 100vh;
+  max-height: 600px;
 }
 
 .heroDetails {

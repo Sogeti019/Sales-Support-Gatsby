@@ -6,6 +6,10 @@
   font-display: swap;
 }
 
+li {
+  list-style-type: none;
+}
+
 body {
   font-family: "Avenir", Tahoma, Arial, Helvetica, sans-serif;
   font-size: 1em;
@@ -29,24 +33,24 @@ h3 {
 
 a {
   color: currentColor;
+  cursor:pointer;
 }
 
-.wrapper {
+/* .wrapper {
   width: calc(100% - 10vmin);
   margin: 0 auto;
   padding: 5vmin 0;
-}
+} */
 
 /**
  * article grid
  */
 .article-list {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  grid-gap: 5vmin;
+  display: flex;
+}
+
+.article-list {
+  display: flex;
 }
 
 /**

@@ -1,8 +1,11 @@
 import React from 'react'
 import Link from 'gatsby-link'
 import base from './base.css'
-import Container from '../components/container'
+import Container from '@material-ui/core/Container';
 import Navigation from '../components/navigation'
+import { AccessAlarm, ThreeDRotation } from '@material-ui/icons';
+import { ThemeProvider } from '@material-ui/core/styles'
+import { theme } from '../theme'
 
 class Template extends React.Component {
   render() {
@@ -15,10 +18,12 @@ class Template extends React.Component {
     }
 
     return (
-      <Container>
-        <Navigation />
-        {children()}
-      </Container>
+      <ThemeProvider theme={theme}>
+        <Container maxWidth="false" style={{ padding: '0' }}>
+          <Navigation />
+          {children()}
+        </Container>
+      </ThemeProvider>
     )
   }
 }
