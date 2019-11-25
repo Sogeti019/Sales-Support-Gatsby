@@ -10,9 +10,9 @@ export default () => {
   return (
     <nav role="navigation">
     <div className={[styles.headerComponents,styles.flex].join(' ')}>
-      <a href="https://www.chick-fil-a.com" className={styles.logo }>
-        <span>Chick-Fil-A</span>
-      </a>
+      <Link className={styles.logo } to="/">
+          <span>Chick-Fil-A</span>
+      </Link>
       <ul className={styles.navList}>
         <li><a>Menu</a></li>
         <li><a>Stories</a></li>
