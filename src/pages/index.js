@@ -90,9 +90,9 @@ export const pageQuery = graphql`
           title
           heroImage: image {
             sizes(
-              maxWidth: 1180
-              maxHeight: 480
-              resizingBehavior: PAD
+              maxWidth: 800
+			  maxHeight: 480
+              resizingBehavior: SCALE
               background: "rgb:000000"
             ) {
               ...GatsbyContentfulSizes_withWebp
