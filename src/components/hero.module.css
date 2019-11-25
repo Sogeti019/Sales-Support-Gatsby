@@ -1,8 +1,9 @@
 .hero {
-  position: relative;
-  background: #000;
-  color: #fff;
-  text-align: center;
+    position: relative;   
+    color: #fff;
+    text-align:left;
+   
+   
 }
 
 .heroImage {
@@ -15,24 +16,23 @@
 }
 
 .heroDetails {
-  position: absolute;
-  background: rgba(0, 0, 0, 0.7);
-  left: 50%;
-  bottom: 0;
+  position: absolute;  
+  left:27%;
+  bottom:5%;
   transform: translate(-50%, 0);
-  font-size: 14px;
+  font-size: 11px;
   padding: 0 0.5em;
 }
 
 @media(min-width: 600px) {
   .heroDetails {
-    font-size: 16px;
+    font-size: 13px;
   }
 }
 
 @media(min-width: 1000px) {
   .heroDetails {
-    font-size: 20px;
+    font-size: 17px;
   }
 }
 
@@ -42,6 +42,7 @@
 
 .heroTitle {
   margin: 0;
-  font-size: 1.125em;
+  
   font-weight: bold;
 }
+
